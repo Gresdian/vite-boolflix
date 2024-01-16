@@ -1,13 +1,26 @@
 <script>
+import { store } from '../store';
 export default {
-            
+    name:'AppMain',
+    components:{
+        
+    }, 
+    data() {
+        return {
+            store
+        }
+    },       
 }
 </script>
 <template lang="">
-    <div>
-        
-    </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <SingleMovie />
+            </div>
+        </div>
+    </main>
 </template>
-<style lang="">
+<style lang="scss" scoped>
     
 </style>
